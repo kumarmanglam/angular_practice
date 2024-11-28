@@ -1,0 +1,99 @@
+.fxContainer {
+    // display: grid;
+    // /* Ensure the grid has 4 columns, and adjust column size based on available space */
+    // grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+    // gap: 1rem; /* Space between grid items */
+    // margin: 0 auto;
+    // max-width: 1200px; /* Optional: Limit max container width */
+    // border: 1px solid red;
+}
+
+.fxCard {
+    // width: 100%; /* Make the card fill the available space in the column */
+    // height: 150px; /* Fixed height for the cards */
+    // border: 1px solid black;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    // padding: 10px;
+    // box-sizing: border-box;
+}
+  
+// h5 {
+//     margin: 0;  
+// }
+
+/* Responsive behavior for smaller screens */
+// @media (max-width: 992px) {
+// .fxContainer {
+//     grid-template-columns: repeat(4, 1fr); /* 2 columns for medium-sized screens */
+// }
+// }
+
+// @media (max-width: 576px) {
+// .fxContainer {
+//     grid-template-columns: repeat(2, 1fr); /* 1 column for small screens */
+// }
+// }
+
+.user-card {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-card .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .user-card .user-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  mat-card-header {
+    text-align: center;
+    padding-bottom: 16px;
+  }
+  
+  mat-card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  mat-card-subtitle {
+    font-size: 1rem;
+    color: gray;
+  }
+  
+  mat-card-content {
+    padding: 8px 16px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+  }
+  
+  mat-card-actions button {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  mat-card-actions button:hover {
+    background-color: #3700b3;
+  }
+  
+  

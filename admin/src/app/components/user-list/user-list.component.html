@@ -1,0 +1,27 @@
+<div class="flex justify-around align-center p-3">
+  <h1>Users</h1>
+  <button mat-raised-button color="primary" (click)="handleAddUserClick()">Add User</button>
+</div>
+<div class="fxContainer row mx-5">
+      <div *ngFor="let user of users" class="fxCard col-sm-6 col-md-4 col-lg-3 mb-3">
+        <mat-card class="user-card h-100 ">
+          <mat-card-header>
+            <div mat-card-avatar class="avatar">
+              <img [src]="user.image_url" alt="{{user.name}}" class="user-image">
+            </div>
+            <mat-card-title>{{ user.name }}</mat-card-title>
+            <mat-card-subtitle>{{ user.username }}</mat-card-subtitle>
+          </mat-card-header>
+          
+          <mat-card-content>
+            <p><strong>Email:</strong> {{ user.email }}</p>
+            <p><strong>Age:</strong> {{ user.age }}</p>
+          </mat-card-content>
+      
+          <mat-card-actions>
+            <button mat-button (click)="handleEditClick(user.id)">Edit Profile</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+      
+</div>
